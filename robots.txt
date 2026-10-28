@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://borndigitalsolutions.co.uk/sitemap.xml
+Sitemap: https://www.borndigitalsolutions.co.uk/sitemap.xml
