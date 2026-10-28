@@ -88,6 +88,34 @@
     });
   });
 
+  /* ---------- Service cards: fade and slide in once, staggered ---------- */
+  var cardGroups = document.querySelectorAll(".offer-grid, .service-grid");
+
+  if ("IntersectionObserver" in window && cardGroups.length) {
+    Array.prototype.forEach.call(cardGroups, function (group) {
+      Array.prototype.forEach.call(group.querySelectorAll(".card-anim"), function (card, i) {
+        card.style.setProperty("--reveal-delay", i * 100 + "ms");
+      });
+    });
+
+    var cardObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var card = entry.target;
+        card.classList.add("is-revealed");
+        cardObserver.unobserve(card);
+        // Drop the stagger once the card is in, so hover responds straight away.
+        setTimeout(function () { card.style.removeProperty("--reveal-delay"); }, 1000);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.1 });
+
+    Array.prototype.forEach.call(document.querySelectorAll(".card-anim"), function (card) {
+      cardObserver.observe(card);
+    });
+    // Hide the cards for the reveal only now that the observer is ready.
+    root.classList.add("cards-animate");
+  }
+
   /* ---------- Scroll reveal ---------- */
   var reveals = document.querySelectorAll(".reveal");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
