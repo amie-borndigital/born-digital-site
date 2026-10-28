@@ -336,6 +336,46 @@ a { color: inherit; }
 .hero--compact .hero__text { max-width: 420px; }
 .hero .btn-row { margin-top: 6px; }
 
+/* Home hero depth: soft pink glow (decorative only) */
+.hero--home {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero--home .hero__content {
+  position: relative;
+  z-index: 1;
+}
+.hero__decor {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+.hero__glow {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: min(980px, 110%);
+  aspect-ratio: 16 / 9;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(228, 25, 103, 0.18), rgba(228, 25, 103, 0.08) 45%, rgba(228, 25, 103, 0) 100%);
+  filter: blur(48px);
+  transform: translate(-50%, -50%) scale(1);
+  animation: hero-glow-breathe 11s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+@keyframes hero-glow-breathe {
+  0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.72; transform: translate(-50%, -50%) scale(1.07); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__glow { animation: none; }
+}
+
 /* ---------- Sections ---------- */
 
 .section { padding: 60px 0 40px; }
@@ -392,11 +432,6 @@ a { color: inherit; }
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   transform: rotate(var(--tilt, 0deg));
-  transition: transform 0.4s var(--ease), border-color 0.3s var(--ease);
-}
-.offer-card:hover {
-  border-color: rgba(228, 25, 103, 0.5);
-  transform: rotate(var(--tilt, 0deg)) translateY(-6px);
 }
 .offer-card:nth-child(1) { --tilt: -4deg; }
 .offer-card:nth-child(3) { --tilt: 4deg; }
@@ -981,6 +1016,50 @@ a { color: inherit; }
 .site-footer__legal a { text-decoration: none; }
 .site-footer__legal a:hover { text-decoration: underline; text-decoration-color: var(--pink); text-underline-offset: 4px; }
 
+
+/* ---------- Service card animations (Home and Services) ---------- */
+/* Only transform and opacity are animated. The pink border and glow live on an
+   overlay that fades in, so the card's own border and shadow never change. */
+
+.card-anim {
+  position: relative;
+  transition:
+    transform 250ms var(--ease),
+    opacity 500ms var(--ease) var(--reveal-delay, 0ms),
+    translate 500ms var(--ease) var(--reveal-delay, 0ms);
+}
+.card-anim::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 1px solid rgba(228, 25, 103, 0.4);
+  border-radius: inherit;
+  box-shadow: 0 0 0 1px rgba(228, 25, 103, 0.08), 0 14px 44px rgba(228, 25, 103, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms var(--ease);
+}
+.card-anim .icon-chip { transition: transform 250ms var(--ease); }
+
+@media (hover: hover) {
+  .card-anim:hover::after { opacity: 1; }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  /* Lift in screen space, then apply the card's own tilt so the tilt is kept. */
+  .card-anim:hover { transform: translateY(-6px) rotate(var(--tilt, 0deg)); }
+  .card-anim:hover .icon-chip { transform: translateY(-3px) scale(1.08); }
+}
+
+/* Reveal on scroll. The hidden state only applies once js/main.js has run and
+   added .cards-animate, so the cards stay visible if the script fails to load. */
+@media (prefers-reduced-motion: no-preference) {
+  .cards-animate .card-anim:not(.is-revealed) {
+    opacity: 0;
+    translate: 0 20px;
+  }
+}
+
 /* ---------- Services page: compact cards ---------- */
 
 .service-grid {
@@ -1425,5 +1504,14 @@ a { color: inherit; }
     width: 100%;
     padding: 15px 24px;
     font-size: 16px;
+  }
+}
+
+/* Phones: keep the glow, slightly wider and softer */
+@media (max-width: 639px) {
+  .hero__glow {
+    top: 44%;
+    width: 160%;
+    filter: blur(36px);
   }
 }
