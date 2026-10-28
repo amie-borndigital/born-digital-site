@@ -1377,6 +1377,53 @@ a { color: inherit; }
 }
 
 @media (max-width: 380px) {
-  .hero__title { font-size: 32px; }
   .contact-card h1 { font-size: 36px; }
+}
+
+/* ---------- Phones under 640px: header and Home hero ---------- */
+
+@media (max-width: 639px) {
+  :root { --header-height: 64px; }
+
+  .site-header__bar { gap: 16px; padding: 0 20px; }
+  .menu-toggle { width: 42px; height: 42px; }
+  .menu-toggle span:nth-child(1) { top: 14px; }
+  .menu-toggle span:nth-child(2) { top: 20px; }
+  .menu-toggle span:nth-child(3) { top: 26px; }
+
+  /* Home hero fills the first screen (svh ignores the browser address bar). */
+  .hero:not(.hero--compact) {
+    min-height: calc(100vh - var(--header-height) - 1px);
+    min-height: calc(100svh - var(--header-height) - 1px);
+    padding: 40px 0 48px;
+  }
+  .hero:not(.hero--compact) .hero__content { gap: 20px; }
+  .hero:not(.hero--compact) .hero__title {
+    font-size: clamp(1.75rem, 8.5vw, 2.6rem);
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+  }
+  .hero:not(.hero--compact) .highlight {
+    margin-top: 0.14em;
+    padding: 0.02em 0.2em 0.1em;
+    line-height: 1.08;
+  }
+  .hero:not(.hero--compact) .hero__text {
+    max-width: 30em;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  .hero:not(.hero--compact) .btn-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    max-width: 340px;
+    margin-top: 0;
+  }
+  .hero:not(.hero--compact) .btn {
+    width: 100%;
+    padding: 15px 24px;
+    font-size: 16px;
+  }
 }
