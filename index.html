@@ -40,7 +40,7 @@
 <header class="site-header">
   <div class="site-header__bar">
     <a class="logo" href="index.html" aria-label="Born Digital home">
-      <img src="images/logo-white.png" alt="Born Digital" width="95" height="36">
+      <img src="images/logo-navy.png" alt="Born Digital" width="95" height="36">
     </a>
     <nav class="site-nav" aria-label="Main">
       <ul class="site-nav__links">
@@ -63,24 +63,96 @@
 </header>
 
 <main id="main">
-  <section class="hero hero--home" aria-labelledby="hero-title">
+  <section class="hero hero--home bg-cream" aria-labelledby="hero-title">
     <div class="hero__decor" aria-hidden="true">
       <span class="hero__glow"></span>
+      <img class="hero__b" src="images/b-mark.png" alt="" width="400" height="400" decoding="async">
     </div>
-    <div class="container hero__content">
-      <h1 class="hero__title reveal" id="hero-title">
-        <span class="line">Customers near you are searching.</span>
-        <span class="line">Make sure they <span class="highlight">find you.</span></span>
-      </h1>
-      <p class="hero__text reveal">We help trades businesses show up on Google, turn enquiries into booked work, and stop good leads slipping away.</p>
-      <div class="btn-row reveal">
-        <a class="btn" href="contact.html">Book a free call</a>
-        <a class="btn btn--secondary" href="https://wa.me/447737989554" target="_blank" rel="noopener">Message us on WhatsApp</a>
+    <div class="container hero__layout">
+      <div class="hero__content">
+        <h1 class="hero__title reveal" id="hero-title">
+          <span class="line">Customers near you are searching.</span>
+          <span class="line">Make sure they <span class="highlight">find you.</span></span>
+        </h1>
+        <p class="hero__text reveal">We help trades businesses show up on Google, turn enquiries into booked work, and stop good leads slipping away.</p>
+        <div class="btn-row reveal">
+          <a class="btn" href="contact.html">Book a free call</a>
+          <a class="btn btn--whatsapp" href="https://wa.me/447737989554" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M72 216l-36 8 8-34A96 96 0 1 1 72 216Z"/><path d="M96 104a24 24 0 0 1 24-24l16 32-12 12a52 52 0 0 0 32 32l12-12 32 16a24 24 0 0 1-24 24 80 80 0 0 1-80-80Z"/></svg>Message us on WhatsApp</a>
+        </div>
+      </div>
+      <div class="search-mock reveal" aria-hidden="true">
+        <div class="search-mock__card">
+          <div class="search-mock__dots"><span></span><span></span><span></span></div>
+          <div class="search-mock__bar"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="112" cy="112" r="72"/><line x1="163" y1="163" x2="216" y2="216"/></svg>plumber near me</div>
+          <div class="search-mock__results">
+            <div class="search-mock__result"><span class="search-mock__thumb"></span><span class="search-mock__lines"><span></span><span></span><span></span></span></div>
+            <div class="search-mock__result"><span class="search-mock__thumb"></span><span class="search-mock__lines"><span></span><span></span><span></span></span></div>
+            <div class="search-mock__result search-mock__result--you"><span class="search-mock__thumb"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="104" r="32"/><path d="M208 104c0 72-80 128-80 128S48 176 48 104a80 80 0 0 1 160 0Z"/></svg></span><span class="search-mock__you"><strong>Your business here</strong><span class="search-mock__lines"><span></span></span></span></div>
+          </div>
+        </div>
+        <p class="search-mock__caption">Illustration only</p>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="offer-title">
+  <section class="trade-strip" aria-label="Trades we work with">
+    <div class="trade-strip__track">
+      <ul class="trade-strip__list"><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li></ul>
+      <ul class="trade-strip__list" aria-hidden="true"><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li><li>Plumbers</li><li>Heating engineers</li><li>Electricians</li></ul>
+    </div>
+  </section>
+
+  <section class="section theme-dark" id="system" aria-labelledby="system-title">
+    <div class="container">
+      <div class="section-head section-head--centre reveal">
+        <span class="pill">The system</span>
+        <div class="section-head__row">
+          <h2 id="system-title">One system, not six separate jobs.</h2>
+          <p>Most trades businesses buy a website here, an ad there and a tool somewhere else, and none of it talks to each other. We build it as one connected system, so every enquiry is caught, answered and followed up.</p>
+        </div>
+      </div>
+      <div class="system-hub reveal">
+        <svg class="system-hub__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <line x1="50" y1="50" x2="35" y2="16"/><line x1="50" y1="50" x2="65" y2="16"/>
+          <line x1="50" y1="50" x2="65" y2="50"/><line x1="50" y1="50" x2="65" y2="84"/>
+          <line x1="50" y1="50" x2="35" y2="84"/><line x1="50" y1="50" x2="35" y2="50"/>
+        </svg>
+        <div class="system-hub__centre">
+          <img src="images/b-mark.png" alt="" width="400" height="400" loading="lazy">
+          <p>Your enquiry system</p>
+        </div>
+        <ol class="system-nodes" role="list">
+          <li class="system-node">
+            <h3><span class="system-node__num">01</span>Search</h3>
+            <p>Google Business Profile and local SEO, so people near you find you.</p>
+          </li>
+          <li class="system-node">
+            <h3><span class="system-node__num">02</span>Website</h3>
+            <p>A fast site built to turn visitors into enquiries.</p>
+          </li>
+          <li class="system-node">
+            <h3><span class="system-node__num">03</span>Quote funnel</h3>
+            <p>A simple form that makes asking for a quote quick and easy.</p>
+          </li>
+          <li class="system-node">
+            <h3><span class="system-node__num">04</span>Ads</h3>
+            <p>Google and Meta ads that send more people in.</p>
+          </li>
+          <li class="system-node">
+            <h3><span class="system-node__num">05</span>Automations</h3>
+            <p>Missed call text back, instant replies, quote follow-up and review requests.</p>
+          </li>
+          <li class="system-node">
+            <h3><span class="system-node__num">06</span>CRM</h3>
+            <p>Every enquiry lands in one place, so nothing is lost and you can see where work comes from.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="system-caption reveal">Everything feeds one place, so nothing slips through.</p>
+    </div>
+  </section>
+
+  <section class="section bg-cream" aria-labelledby="offer-title">
     <div class="container">
       <div class="section-head reveal">
         <span class="pill">What we do</span>
@@ -114,7 +186,52 @@
     </div>
   </section>
 
-  <section class="section" id="how-it-works" aria-labelledby="how-title">
+  <section class="section bg-white" aria-labelledby="lost-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="pill">The gaps</span>
+        <div class="section-head__row">
+          <h2 id="lost-title">Where enquiries get lost</h2>
+          <p>Most trades businesses are good at the work. The gaps are around it.</p>
+        </div>
+      </div>
+      <div class="compare reveal">
+        <div class="compare__head" aria-hidden="true"><span></span><span>Without a system</span><span>With Born Digital</span></div>
+        <div class="compare__row">
+          <h3>Being found</h3>
+          <p class="compare__cell compare__cell--without"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg>Without a system</span><span><span class="visually-hidden">Without a system: </span>Customers find the competition first.</span></p>
+          <p class="compare__cell compare__cell--with"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg>With Born Digital</span><span><span class="visually-hidden">With Born Digital: </span>You show up when people near you search for your trade.</span></p>
+        </div>
+        <div class="compare__row">
+          <h3>Missed calls</h3>
+          <p class="compare__cell compare__cell--without"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg>Without a system</span><span><span class="visually-hidden">Without a system: </span>A missed call is a lost job.</span></p>
+          <p class="compare__cell compare__cell--with"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg>With Born Digital</span><span><span class="visually-hidden">With Born Digital: </span>Every missed call gets an instant text back.</span></p>
+        </div>
+        <div class="compare__row">
+          <h3>New enquiries</h3>
+          <p class="compare__cell compare__cell--without"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg>Without a system</span><span><span class="visually-hidden">Without a system: </span>Replies wait until you are off the tools.</span></p>
+          <p class="compare__cell compare__cell--with"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg>With Born Digital</span><span><span class="visually-hidden">With Born Digital: </span>New enquiries get an instant reply.</span></p>
+        </div>
+        <div class="compare__row">
+          <h3>Quotes</h3>
+          <p class="compare__cell compare__cell--without"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg>Without a system</span><span><span class="visually-hidden">Without a system: </span>Quotes go quiet and never get chased.</span></p>
+          <p class="compare__cell compare__cell--with"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg>With Born Digital</span><span><span class="visually-hidden">With Born Digital: </span>Every quote gets followed up automatically.</span></p>
+        </div>
+        <div class="compare__row">
+          <h3>Reviews</h3>
+          <p class="compare__cell compare__cell--without"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg>Without a system</span><span><span class="visually-hidden">Without a system: </span>Happy customers never get asked.</span></p>
+          <p class="compare__cell compare__cell--with"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg>With Born Digital</span><span><span class="visually-hidden">With Born Digital: </span>Customers are asked for a review after the job.</span></p>
+        </div>
+        <div class="compare__row">
+          <h3>Your website</h3>
+          <p class="compare__cell compare__cell--without"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg>Without a system</span><span><span class="visually-hidden">Without a system: </span>A page that just sits there.</span></p>
+          <p class="compare__cell compare__cell--with"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span class="compare__tag" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg>With Born Digital</span><span><span class="visually-hidden">With Born Digital: </span>A fast site built to bring in enquiries.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-cream" id="how-it-works" aria-labelledby="how-title">
     <div class="container">
       <div class="section-head reveal">
         <span class="pill">How it works</span>
@@ -187,10 +304,10 @@
               <span class="mock__group">
               <span class="mock__stack">
                 <span class="mock__enquiry"><strong>New enquiry</strong><span>replied</span></span>
-                <span class="mock__progress"><svg class="icon icon--filled" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="104" fill="currentColor" stroke="none"/><polyline points="88 132 116 160 170 106" stroke="#1b1b2b" stroke-width="22"/></svg><span class="mock__track"><span class="mock__fill"></span></span></span>
+                <span class="mock__progress"><svg class="icon icon--filled" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="104" fill="currentColor" stroke="none"/><polyline points="88 132 116 160 170 106" stroke="#ffffff" stroke-width="22"/></svg><span class="mock__track"><span class="mock__fill"></span></span></span>
               </span>
               <span class="mock__divider"></span>
-              <span class="mock__row mock__row--task"><span class="mock__task"><svg class="icon icon--filled" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="104" fill="currentColor" stroke="none"/><polyline points="88 132 116 160 170 106" stroke="#1b1b2b" stroke-width="22"/></svg>Quote followed up</span><svg class="icon mock__end-icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><circle cx="128" cy="128" r="56"/><circle cx="128" cy="128" r="16"/></svg></span>
+              <span class="mock__row mock__row--task"><span class="mock__task"><svg class="icon icon--filled" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="104" fill="currentColor" stroke="none"/><polyline points="88 132 116 160 170 106" stroke="#ffffff" stroke-width="22"/></svg>Quote followed up</span><svg class="icon mock__end-icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><circle cx="128" cy="128" r="56"/><circle cx="128" cy="128" r="16"/></svg></span>
               <span class="mock__divider"></span>
               <span class="mock__row mock__row--task"><span class="mock__task mock__task--todo"><span class="mock__empty-check"></span>Review requested</span><svg class="icon mock__end-icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M32 72a8 8 0 0 1 8-8h61.3a8 8 0 0 1 5 1.8L128 88h88a8 8 0 0 1 8 8v104a8 8 0 0 1-8 8H40a8 8 0 0 1-8-8Z"/></svg></span>
               </span>
@@ -205,7 +322,29 @@
     </div>
   </section>
 
-  <section class="about section--alt" id="about" aria-labelledby="about-title">
+  <section class="section bg-white" aria-labelledby="fit-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="pill">Who we help</span>
+        <div class="section-head__row">
+          <h2 id="fit-title">Is this for you?</h2>
+          <p>A quick check before we talk.</p>
+        </div>
+      </div>
+      <div class="fit-grid">
+        <div class="fit-card fit-card--yes reveal">
+          <h3>Right for you if</h3>
+          <ul class="fit-list"><li><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span>You are a plumber, heating engineer or electrician.</span></li><li><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span>You want more enquiries from your area.</span></li><li><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span>You are tired of missed calls and quotes going quiet.</span></li><li><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><polyline points="88 136 112 160 168 104"/></svg><span>You would rather someone else handled the tech.</span></li></ul>
+        </div>
+        <div class="fit-card fit-card--no reveal">
+          <h3>Not right for you if</h3>
+          <ul class="fit-list"><li><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span>You are not looking to grow.</span></li><li><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span>You want a one-off logo or leaflet.</span></li><li><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><circle cx="128" cy="128" r="96"/><line x1="160" y1="96" x2="96" y2="160"/><line x1="96" y1="96" x2="160" y2="160"/></svg><span>You are outside the trades we work with.</span></li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about theme-dark" id="about" aria-labelledby="about-title">
     <div class="container about__inner reveal">
       <div class="about__head">
         <span class="pill">About us</span>
@@ -216,7 +355,7 @@
     </div>
   </section>
 
-  <section class="faq" aria-labelledby="faq-title">
+  <section class="faq bg-cream" aria-labelledby="faq-title">
     <div class="container faq__inner">
       <div class="faq__head reveal">
         <span class="pill">FAQs</span>
@@ -279,15 +418,18 @@
   </section>
 
   <section class="cta" aria-labelledby="cta-title">
-    <div class="cta__box reveal">
+    <div class="container cta__inner reveal">
       <h2 id="cta-title">Ready to get found?</h2>
       <p>Book a free call and we will look at where you stand.</p>
-      <a class="btn" href="contact.html">Book a free call</a>
+      <div class="btn-row">
+        <a class="btn btn--light" href="contact.html">Book a free call</a>
+        <a class="btn btn--whatsapp" href="https://wa.me/447737989554" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M72 216l-36 8 8-34A96 96 0 1 1 72 216Z"/><path d="M96 104a24 24 0 0 1 24-24l16 32-12 12a52 52 0 0 0 32 32l12-12 32 16a24 24 0 0 1-24 24 80 80 0 0 1-80-80Z"/></svg>Message us on WhatsApp</a>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer theme-dark">
   <div class="container">
     <div class="site-footer__top">
       <div class="site-footer__brand">
@@ -309,10 +451,10 @@
         <div class="footer-col footer-col--contact">
           <h2>Contact</h2>
           <ul>
-            <li><a href="https://wa.me/447737989554" target="_blank" rel="noopener">Message us on WhatsApp</a></li>
             <li><a href="tel:+447737989554">07737989554</a></li>
             <li><a href="mailto:amie@borndigitalsolutions.co.uk">amie@borndigitalsolutions.co.uk</a></li>
           </ul>
+          <a class="btn btn--whatsapp footer-whatsapp" href="https://wa.me/447737989554" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M72 216l-36 8 8-34A96 96 0 1 1 72 216Z"/><path d="M96 104a24 24 0 0 1 24-24l16 32-12 12a52 52 0 0 0 32 32l12-12 32 16a24 24 0 0 1-24 24 80 80 0 0 1-80-80Z"/></svg>Message us on WhatsApp</a>
         </div>
       </div>
     </div>
