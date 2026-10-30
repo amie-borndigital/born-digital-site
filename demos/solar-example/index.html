@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example Solar and Energy | Solar, heat pumps and batteries in Anytown</title>
+  <meta name="description" content="Example website for a fictional solar and renewables company in Anytown, Hampshire. Not a real business. Built by Born Digital.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#101018">
+  <link rel="icon" type="image/svg+xml" href="quote/brand/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="demo-banner">
+      <p><a href="https://www.borndigitalsolutions.co.uk/" target="_blank" rel="noopener">Example website, not a real business. Built by Born Digital.</a></p>
+    </div>
+    <div class="nav">
+      <div class="nav-inner">
+        <a class="logo" href="#top" aria-label="Example Solar and Energy, back to top">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </span>
+          <span class="logo-words">
+            <span class="logo-name">Example Solar</span>
+            <span class="logo-sub">and Energy · Anytown</span>
+          </span>
+        </a>
+        <nav class="nav-right" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a class="btn btn-primary btn-nav" href="#quote">Get a quote
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+        </nav>
+        <div class="nav-phone-tools">
+          <a class="icon-btn" href="tel:+447700900123" aria-label="Call 07700 900123">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+          <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <svg class="i-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="i-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#quote">Get a solar estimate</a>
+        <a class="btn btn-ghost" href="tel:+447700900123">Call 07700 900123</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-row">
+        <div class="hero-head reveal">
+          <p class="chip"><span class="chip-dot" aria-hidden="true"></span>Solar, heat pumps and batteries in Anytown, Hampshire</p>
+          <h1>Make your own power. Store it. Use it.</h1>
+        </div>
+
+        <div class="quote-card reveal" id="quote">
+          <div id="solar-quote"></div>
+          <noscript><p class="quote-noscript">The quote builder needs JavaScript. Call 07700 900123 or email hello@example.com instead.</p></noscript>
+        </div>
+
+        <div class="hero-body reveal">
+          <p class="lead">We design and fit solar panels, heat pumps and home batteries for homes and small businesses in and around Anytown. We visit first, quote in writing and talk you through every option.</p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="#quote">Get a solar estimate
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="tel:+447700900123">Call 07700 900123</a>
+          </div>
+          <ul class="ticks">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Homes and small businesses</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Written quotes</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Based in Anytown, Hampshire</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Accreditations">
+      <div class="strip-inner">
+        <div class="placeholder placeholder-strip">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+          <p>Accreditation badges go here</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">What we do</p>
+          <h2>Three ways to make and store your own energy.</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-photo" style="background-image:url('images/service-solar.jpg')" role="img" aria-label="Close-up of solar panels on a roof">
+              <span class="tag">Solar</span>
+            </div>
+            <div class="card-body">
+              <h3>Solar panels</h3>
+              <p class="soft">Panels sized to your roof and to how you use electricity, so more of the power you use comes from your own roof.</p>
+            </div>
+            <a class="card-foot" href="#quote">
+              <span>Get a solar estimate</span>
+              <span class="arrow-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+            </a>
+          </article>
+          <article class="card reveal">
+            <div class="card-photo" style="background-image:url('images/service-heat-pump.jpg')" role="img" aria-label="Air source heat pump outside a brick house">
+              <span class="tag">Heating</span>
+            </div>
+            <div class="card-body">
+              <h3>Heat pumps</h3>
+              <p class="soft">An air source heat pump in place of an oil or gas boiler, planned room by room for your home or premises.</p>
+            </div>
+            <a class="card-foot" href="#contact">
+              <span>Ask about heat pumps</span>
+              <span class="arrow-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+            </a>
+          </article>
+          <article class="card reveal">
+            <div class="card-photo" style="background-image:url('images/service-battery.jpg')" role="img" aria-label="Close-up of battery cells">
+              <span class="tag">Storage</span>
+            </div>
+            <div class="card-body">
+              <h3>Energy storage</h3>
+              <p class="soft">A home battery that keeps spare solar for the evening, or charges from the grid overnight when your tariff allows.</p>
+            </div>
+            <a class="card-foot" href="#quote">
+              <span>Add a battery to your estimate</span>
+              <span class="arrow-box" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="homes-and-businesses">
+      <div class="inner split">
+        <div class="split-photo reveal" style="background-image:url('images/homes-business-roof.jpg')" role="img" aria-label="Solar panels across a commercial roof, seen from above"></div>
+        <div class="split-copy reveal">
+          <p class="eyebrow">Homes and small businesses</p>
+          <h2>Power the house, the shop or the workshop.</h2>
+          <p class="lead">Whether it’s a family home or a small business, we start by looking at how you use energy, then suggest the mix of solar, heat pump and storage that suits the building. If something won’t work for your property, we’ll say so.</p>
+          <ul class="points">
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>A survey of your roof, loft, heating and fuse board before we quote</li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Systems sized to the building and the energy you actually use</li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Solar with or without a battery, which you can add now or later</li>
+            <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Network operator paperwork handled for you</li>
+          </ul>
+          <div class="note">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="M8 12h4"/><path d="M10 16V9.5a2.5 2.5 0 0 1 5 0"/><path d="M8 16h7"/></svg>
+            <p class="soft">Grant and funding schemes for heat pumps, solar and batteries change often. We check what’s open when we quote and explain what your property may be eligible for.</p>
+          </div>
+          <div class="buttons">
+            <a class="btn btn-primary" href="#quote">Get a quote
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#services">See our services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>From first chat to switch&#8209;on in four steps.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step is-first reveal">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Tell us about your property</h3>
+            <p class="soft">Ring us or send an email with your postcode and a few details. Photos of the roof and fuse board help us prepare.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>We visit and survey</h3>
+            <p class="soft">We look at the roof, the loft, the heating and the fuse board, and talk through how you use energy day to day.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>A written quote</h3>
+            <p class="soft">You get a quote in writing that sets out what we’d fit and why, with no pressure to go ahead.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>We install and hand over</h3>
+            <p class="soft">We fit everything on the days we agreed, switch it on and show you how it all works before we leave.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-tight-top" id="projects">
+      <div class="inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">Recent projects</p>
+          <h2>A look at our recent installs.</h2>
+        </div>
+        <p class="demo-note reveal">Example projects for this demo, with stock photos. Not real jobs.</p>
+        <div class="jobs">
+          <article class="job reveal">
+            <div class="job-photo" style="background-image:url('images/project-solar-home.jpg')" role="img" aria-label="Solar panels on the roof of a detached house above the garage">
+              <span class="tag tag-pin"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Anytown</span>
+            </div>
+            <div class="job-text">
+              <p class="eyebrow">Solar panels</p>
+              <h3>Panels on a detached family home</h3>
+              <p class="soft">A roof over the garage that gets the afternoon sun. We kept the panels together on the sunniest side and fitted the inverter in the loft.</p>
+            </div>
+          </article>
+          <article class="job reveal">
+            <div class="job-photo" style="background-image:url('images/project-heat-pump-office.jpg')" role="img" aria-label="Air source heat pump outside a modern office building">
+              <span class="tag tag-pin"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Anytown</span>
+            </div>
+            <div class="job-text">
+              <p class="eyebrow">Heat pump</p>
+              <h3>A heat pump for a small office</h3>
+              <p class="soft">An air source heat pump in place of an old gas boiler. We checked the radiators room by room before we started, so the whole office stays warm.</p>
+            </div>
+          </article>
+          <article class="job reveal">
+            <div class="job-photo" style="background-image:url('images/project-battery-garage.jpg')" role="img" aria-label="Home battery and EV charger on a garage wall">
+              <span class="tag tag-pin"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Near Anytown</span>
+            </div>
+            <div class="job-text">
+              <p class="eyebrow">Battery and EV charger</p>
+              <h3>A battery and charger in the garage</h3>
+              <p class="soft">A home battery and a solar-matching charger on the garage wall, so the car can charge from spare solar during the day.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="reviews">
+      <div class="inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">Reviews</p>
+          <h2>What our customers say.</h2>
+        </div>
+        <p class="demo-note reveal">Example reviews written for this demo. Not from real customers.</p>
+        <div class="reviews">
+          <figure class="review reveal">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+            <blockquote>They came out, looked at the roof and the loft, and talked us through what made sense for us. The quote was clear and the fitting was tidy.</blockquote>
+            <figcaption><span class="review-name">Helen</span><span class="review-detail">Solar panels, Anytown</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+            <blockquote>We wanted to replace an old oil boiler. They explained how a heat pump would work with our radiators and were honest about the rooms that needed bigger ones.</blockquote>
+            <figcaption><span class="review-name">James</span><span class="review-detail">Heat pump, near Anytown</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+            <blockquote>Adding a battery to our panels was simple. They set up the app before they left and showed us how to see what the house is using.</blockquote>
+            <figcaption><span class="review-name">Aisha</span><span class="review-detail">Home battery, Anytown</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="inner cta-inner reveal">
+        <div class="cta-copy">
+          <h2>Tell us about your property. We’ll tell you what fits.</h2>
+          <p class="lead">We work across Anytown and the surrounding area of Hampshire. Call us, or email your postcode and a few details, and we’ll get back to you.</p>
+        </div>
+        <div class="cta-buttons">
+          <a class="btn btn-dark" href="mailto:hello@example.com">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email us
+          </a>
+          <a class="btn btn-outline-dark" href="tel:+447700900123">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            07700 900123
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-call">
+        <div class="footer-call-copy">
+          <p class="label">Questions about solar, heat pumps or batteries? Give us a ring.</p>
+          <a class="phone-big" href="tel:+447700900123">07700 900123</a>
+        </div>
+        <div class="placeholder placeholder-chip">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+          <p>Accreditation badges go here</p>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col footer-brand">
+          <p class="footer-name">Example Solar and Energy</p>
+          <p class="soft">Solar panels, heat pumps and home batteries for homes and small businesses in Anytown, Hampshire, and the villages around it.</p>
+        </div>
+        <div class="footer-col">
+          <p class="label label-accent">Services</p>
+          <ul>
+            <li><a href="#services">Solar panels</a></li>
+            <li><a href="#services">Heat pumps</a></li>
+            <li><a href="#services">Energy storage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="label label-accent">On this page</p>
+          <ul>
+            <li><a href="#homes-and-businesses">Homes and businesses</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#quote">Get a solar estimate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="label label-accent">Get in touch</p>
+          <ul>
+            <li><a href="tel:+447700900123">07700 900123</a></li>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li>Anytown, Hampshire</li>
+            <li><a href="#contact">Request a quote →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Example Solar and Energy. All rights reserved.</p>
+        <p><a href="https://www.borndigitalsolutions.co.uk/" target="_blank" rel="noopener">Example website, not a real business. Built by Born Digital.</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="quote/widget.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
