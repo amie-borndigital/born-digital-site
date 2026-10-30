@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" rx="40" fill="#161622"/>
+  <rect x="12" y="12" width="1176" height="876" rx="34" fill="none" stroke="#F2F4F8" stroke-opacity=".36" stroke-width="4" stroke-dasharray="16 12"/>
+  <g transform="translate(564 340)" fill="none" stroke="#2EDB2E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M54 66H12a6 6 0 0 1-6-6V18"/><path d="m66 39-3.9-3.9a7.2 7.2 0 0 0-10.2 0L33 54"/><circle cx="36" cy="24" r="6"/><rect width="48" height="48" x="18" y="6" rx="6"/></g>
+  <text x="50%" y="540" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="44" font-weight="700" fill="#F2F4F8">Project photos go here</text>
+</svg>
